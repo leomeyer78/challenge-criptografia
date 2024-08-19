@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criptografia de Texto</title>
+    <title>Challenge-Criptografia de Mensagens</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Challenge-Criptografia de Mensagens</h1>
+    
     <div class="container">
-        <h1>Criptografia de Texto</h1>
-        
-        <label for="texto">Insira o texto:</label>
-        <textarea id="texto" rows="4" placeholder="Digite seu texto aqui..."></textarea>
+        <div class="input-section">
+            <textarea id="inputText" placeholder="Digite seu texto aqui..."></textarea>
+            <div class="options">
+                <button id="encryptBtn">Criptografar</button>
+                <button id="decryptBtn">Descriptografar</button>
+            </div>
+            <p class="warning">* Apenas letras minúsculas sem acentos e caracteres especiais são aceitos.</p>
+        </div>
 
-        <label for="acao">Escolha uma ação:</label>
-        <select id="acao">
-            <option value="criptografar">Criptografar</option>
-            <option value="descriptografar">Descriptografar</option>
-        </select>
-
-        <button id="executar">Executar</button>
-
-        <h2>Resultado:</h2>
-        <textarea id="resultado" rows="4" readonly></textarea>
-        
-        <button id="copiar">Copiar</button>
+        <div class="output-section">
+            <textarea id="outputText" readonly placeholder="O resultado aparecerá aqui..."></textarea>
+            <button id="copyBtn">Copiar</button>
+        </div>
     </div>
+
+    <footer>
+        <p>Desenvolvido por Leonardo Meyer - 08/2024</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
